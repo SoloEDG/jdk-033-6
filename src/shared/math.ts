@@ -10,3 +10,5 @@ export const dot = (a: Point, b: Point) => a.x * b.x + a.y * b.y
 export const distance = (a: Point, b: Point) => Math.hypot(a.x - b.x, a.y - b.y)
 export const mix = (a: number, b: number, t: number) => a + (b - a) * t
 export const pointAt = (a: Point, b: Point, t: number): Point => ({ x: mix(a.x, b.x, t), y: mix(a.y, b.y, t) })
+export const add = (a: Point, b: Point): Point => ({ x: a.x + b.x, y: a.y + b.y })
+export const scale = (a: Point, k: number): Point => ({ x: a.x * k, y: a.y * k })

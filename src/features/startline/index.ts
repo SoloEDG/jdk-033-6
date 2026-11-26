@@ -1,0 +1,7 @@
+export { useStartline } from './model/useStartline'
+export { default as StartlinePanel } from './ui/StartlinePanel.vue'
+export { default as StartChart } from './ui/StartChart.vue'
+export { evaluate, makeFullPolicy, makeAggressivePolicy, Policy, causalConsistency } from './lib/planner'
+export { simulate } from './lib/simulate'
+export { SCENARIOS, ALLOWED_TACKS, BLOCK_PIN, START_GATE, PLAYER_START } from './lib/startWorld'
+export type { PlanVerdict, ScenarioRollout, StartCommand, VerdictKind } from './lib/types'
